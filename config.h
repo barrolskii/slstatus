@@ -63,6 +63,7 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function 	format 		argument */
+	{ run_command,			" [Packages: %s]",	"pacman -Qe | wc -l" },
 	{ battery_state, 		" [%s",			"BAT0" },
 	{ battery_perc, 		" %s%%]",		"BAT0" },
 	{ run_command, 			" [%s]",		"free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g" },
